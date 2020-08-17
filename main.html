@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Elevatec</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="icon" type="image/png" href="imagenes/elevatec.png">
+   		<link rel="stylesheet"  href="estilos.css">
+
+   		<script src="js/push.min.js"></script>
+
+	</head>
+
+	<body bgclor="#e3f2fd blue lighten-5">
+
+		<div class="form">
+			
+			<nav class="#0277bd light-blue darken-3">
+
+			    <div class="nav-wrapper container">
+			      <a href="#!" class="brand-logo">ELEVATEC</a>
+			      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			      <ul class="right hide-on-med-and-down">
+			        <li><a href="#">Hyundai STVF1</a></li>
+			        <li><a href="#">Hyundai STVF5</a></li>
+			        <li><a href="#">Hyundai STVF7</a></li>
+			        <li><a href="wbvf_registro.php">Hyundai WBVF</a></li>
+			      </ul>
+			    </div>
+  			</nav>
+  			
+			  <ul class="sidenav" id="mobile-demo">
+			    <li><a href="#">Hyundai STVF1</a></li>
+			    <li><a href="#">Hyundai STVF5</a></li>
+			    <li><a href="#">Hyundai STVF9</a></li>
+			    <li><a href="wbvf_registro.php">Hyundai WBVF</a></li>
+			  </ul>
+
+
+
+			 
+
+			 
+			<!-- <div class ="carousel carousel-slider">
+					<a class="carousel-item"><img src="imagenes/rampas.jpg"></a>
+					<a class="carousel-item"><img src="imagenes/rampa2.jpg"></a>
+					<a class="carousel-item"><img src="imagenes/rampas3.jpg"></a>
+					<a class="carousel-item"><img src="imagenes/reparaciones.jpg"></a>
+					<a class="carousel-item"><img src="imagenes/tecnicoducto.jpg"></a>
+					<a class="carousel-item"><img src="imagenes/tecnicorampa.jpg"></a>
+					<a class="carousel-item"><img src="imagenes/showroom.jpg"></a>
+					<a class="carousel-item"><img src="imagenes/ducto3.jpg"></a>
+			</div>-->
+			
+		</div>
+
+		<script>
+			Push.create("Elevatec",{
+				body:"Se ha ingresado un nuevo proyeto",
+				icon:"imagenes/elevatec.png",
+				timeout:4000,
+				onClick: function(){
+					window.location="wbvf_registro.php";
+					this.close();
+				}
+
+			});
+				
+		</script>
+	
+
+		
+
+		
+	
+
+		<script
+	 		src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+		</script>
+
+		<script >
+		document.addEventListener('DOMContentLoaded', function() {
+    		var elems = document.querySelectorAll('.carousel');
+   		 	var instances = M.Carousel.init(elems,{
+   		 		duration:150,
+   		 		indicators: true,
+   		 	});
+   		 	M.AutoInit();
+   		 	
+  		});
+  	
+	</script>
+	</body>
+	</html>	

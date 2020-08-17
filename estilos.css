@@ -1,0 +1,33 @@
+.carousel{
+	min-height: 1800px;
+	min-width: 1400px;
+}
+
+.carousel .carousel-item {
+	width: 500px !important;
+	height: 1500px !important;
+	position: center;
+}
+
+.brand-logo .img{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: url(imagenes/rampas3.jpg) no-repeat fixed center top;
+	background-size: cover;
+	font-family: sans-serif;
+	height: 100vh;
+
+}
+.slider img{
+	width: 100%;
+}
+
