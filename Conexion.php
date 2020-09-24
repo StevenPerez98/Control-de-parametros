@@ -1,4 +1,5 @@
 <?php
+ob_start();
 $hostname = 'localhost';
 $username = 'root';
 $password = '';
@@ -10,6 +11,5 @@ if(!$conexion){
 }else{
 	echo'Conexion exitosa';
 }
-
-
+ob_end_flush();
  ?>  
